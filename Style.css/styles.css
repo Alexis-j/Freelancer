@@ -12,15 +12,42 @@ html {
 }
 
 body {
-   font-size: 16px;  /*1rem = 10px */
+  font-family:'Krub', sans-serif;
+  font-size: 16px;  /*1rem = 10px */
 }
 
 .titulo {
 align-items: center;
 font-size: 3.8rem;
-font-family:'Krub', sans-serif;
+
+
 }
 
 .titulo span {
   font-size: 2rem;
+}
+.container{
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.nav-bg{
+  background-color: var(--tertiary);
+}
+.main-nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  background-color: var(--primary);
+  color: var(--oscuro);
 }

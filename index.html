@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freelancer</title>
+  <link rel="preload" href="Style.css/normalize.css" as="style">
+  <link rel="stylesheet" href="Style.css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -21,12 +23,14 @@
   <header>
     <h1 class="titulo"> Name, Last Name <span>Freelancer</span></h1>
   </header>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">About Us</a>
-    <a href="#">Customers</a>
-    <a href="#">Contact</a>
-  </nav>
+  <div class="nav-bg">
+    <nav class="main-nav container">
+      <a href="#">Inicio</a>
+      <a href="#">About Us</a>
+      <a href="#">Customers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </div>
   <section>
     <p>Freelance Web Design and Development</p>
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFA41B" fill="none" stroke-linecap="round" stroke-linejoin="round">
