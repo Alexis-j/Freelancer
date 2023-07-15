@@ -1,3 +1,12 @@
+:root {
+  --blanco:#ffffff;
+  --oscuro:#212121;
+  --primary:#FFA41B;
+  --secondary:#F86F03;
+  --tertiary:#525FE1;
+  --quaternary:#FFF6F4;
+}
+
 html {
   font-size: 65.5%;
 }
@@ -9,8 +18,9 @@ body {
 h1 {
 align-items: center;
 font-size: 3.8rem;
+font-family:'Krub', sans-serif;
 }
 
-span {
+.titulo span {
   font-size: 2rem;
 }
