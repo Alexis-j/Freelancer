@@ -6,6 +6,7 @@
   --tertiary:#525FE1;
   --quaternary:#FFF6F4;
   --moradoClaro:#e8e9f3;
+  --grey: #757575;
 }
 /* globales */
 html {
@@ -36,11 +37,15 @@ body {
   border-radius:.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
 @media (min-width: 768px) {
   .button {
     width: auto;
   }
+}
+.button :hover{
+  cursor: pointer;
 }
 .shadow{
   box-shadow:  0px 5px 15px 0px rgba(112,112,112,0.48);
@@ -67,6 +72,22 @@ h1, h2, h3 {
 
 .titulo span {
   font-size: 2rem;
+}
+
+/*utilidades*/
+.w-sm-100{
+  width: 100;
+}
+@media (min-width: 768) {
+  .w-sm-100{
+    width: auto;
+  }
+}
+.flex{
+  display: flex;
+}
+.align-right{
+  justify-content: flex-end
 }
 
 .nav-bg{
@@ -153,7 +174,7 @@ h1, h2, h3 {
   height: 15rem;
   width: 15rem;
   border-radius: 50%;
-  background-color: #FFA41B;
+  background-color: var(--primary);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -161,8 +182,45 @@ h1, h2, h3 {
 /* contacto */
 
 .form{
+  background-color: var(--grey);
+  width: min(60rem, 100%);/*utiliza el valor mas pequeno*/
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
 
 }
 .form fieldset{
   border: none;
+}
+
+.form legend{
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.fill-container{
+
+}
+.fill{
+  margin-bottom: 1rem;
+}
+.fill label{
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.input-text{
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: .5rem;
+}
+.send .button{
+  width: 100%;
 }

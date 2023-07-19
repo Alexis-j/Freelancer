@@ -100,31 +100,31 @@
       <h2>Contact</h2>
       <form class="form">
         <fieldset>
-          <legend>Contact Me</legend>
+          <legend>please fill in the form</legend>
+          <div class="fill-container">
+            <div class="fill">
+              <label>Name</label>
+              <input class="input-text" type="text" placeholder="Name" />
+            </div>
 
-          <div>
-            <label>Nombre</label>
-            <input type="text" placeholder="Name" />
-          </div>
+            <div class="fill">
+              <label>Phone number</label>
+              <input class="input-text" type="tel" placeholder="+49 ### #######" />
+            </div>
 
-          <div>
-            <label>Phone number</label>
-            <input type="tel" placeholder="+49 ### #######" />
-          </div>
+            <div class="fill">
+              <label>Email</label>
+              <input class="input-text" type="email" placeholder="example@example.com" />
+            </div>
 
-          <div>
-            <label>Email</label>
-            <input type="email" placeholder="example@example.com" />
-          </div>
-
-          <div>
-            <label>Message</label>
-            <textarea></textarea>
-          </div>
-
-          <div>
-            <input type="submit" value="Send">
-          </div>
+            <div>
+              <label >Message</label>
+              <textarea class="input-text"></textarea>
+            </div>
+          </div> <!--fil container closing tag-->
+            <div class="send flex align-right">
+              <input class="button w-sm-100" type="submit" value="Send">
+            </div>
         </fieldset>
       </form>
     </section>
