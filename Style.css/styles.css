@@ -5,20 +5,52 @@
   --secondary:#F86F03;
   --tertiary:#525FE1;
   --quaternary:#FFF6F4;
+  --moradoClaro:#e8e9f3;
 }
-
+/* globales */
 html {
   font-size: 65.5%;
-  /* box-sizing: border-box;
+  box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
-} */
 }
 body {
   font-family:'Krub', sans-serif;
-  font-size: 16px;  /*1rem = 10px */
+  font-size: 16px;
+  background-image: linear-gradient(to top, var(--moradoClaro) 0%, var(--blanco) 100% );
 }
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.button{
+  background-color: var(--tertiary);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius:.5rem;
+  width: 90%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .button {
+    width: auto;
+  }
+}
+.shadow{
+  box-shadow:  0px 5px 15px 0px rgba(112,112,112,0.48);
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+
+}
+
+/* typografy */
 h1{
   font-size: 3.8rem;
 }
@@ -35,10 +67,6 @@ h1, h2, h3 {
 
 .titulo span {
   font-size: 2rem;
-}
-.container{
-  max-width: 120rem;
-  margin: 0 auto;
 }
 
 .nav-bg{
@@ -77,6 +105,7 @@ h1, h2, h3 {
   background-size: cover;
   height: 450px;
   position: relative;
+  margin-bottom: 2rem;
 }
 .container-hero{
   position: absolute;
@@ -96,23 +125,4 @@ h1, h2, h3 {
 .pin{
   display: flex;
   align-items: flex-end;
-}
-
-.button{
-  background-color: var(--tertiary);
-  color: var(--blanco);
-  padding: 1rem 3rem;
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius:.5rem;
-  width: 90%;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .button {
-    width: auto;
-  }
 }
